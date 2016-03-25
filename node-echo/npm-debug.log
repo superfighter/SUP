@@ -1,0 +1,538 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'md5' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of D:\nodeDemo\node-echo\package.json
+5 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\chai\package.json
+6 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\chai-jq\package.json
+7 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\chai-webdriver\package.json
+8 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\cheerio\package.json
+9 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\formidable\package.json
+10 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\lodash\package.json
+11 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\mocha\package.json
+12 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\mochawesome\package.json
+13 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\mockjs\package.json
+14 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\nock\package.json
+15 verbose installManyTop reading scoped package data from D:\nodeDemo\node-echo\node_modules\selenium-webdriver\package.json
+16 info package.json formidable@1.0.17 No license field.
+17 info package.json mockjs@1.0.0 No license field.
+18 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\package.json
+19 silly cache add args [ 'md5', null ]
+20 verbose cache add spec md5
+21 silly cache add parsed spec { raw: 'md5',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'md5',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed md5@*
+23 verbose addNamed "*" is a valid semver range for md5
+24 silly addNameRange { name: 'md5', range: '*', hasData: false }
+25 silly mapToRegistry name md5
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry http://registry.npmjs.org/
+28 silly mapToRegistry uri http://registry.npmjs.org/md5
+29 verbose addNameRange registry:http://registry.npmjs.org/md5 not in flight; fetching
+30 verbose request uri http://registry.npmjs.org/md5
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 10:45:49
+33 verbose request id db881fb4d51e3227
+34 verbose etag "3D5OM65XTEDMZH4X871BOWLVL"
+35 http request GET http://registry.npmjs.org/md5
+36 http 200 http://registry.npmjs.org/md5
+37 silly get cb [ 200,
+37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly get     etag: '"DVY6L5RGR7OS15PQEDATYFHI1"',
+37 silly get     'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     'content-length': '8695',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Fri, 25 Mar 2016 02:46:38 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     'x-served-by': 'cache-itm7425-ITM',
+37 silly get     'x-cache': 'HIT, MISS from HexinFirewall',
+37 silly get     'x-cache-hits': '1',
+37 silly get     'x-timer': 'S1458873998.060114,VS0,VE741',
+37 silly get     vary: 'Accept',
+37 silly get     connection: 'keep-alive',
+37 silly get     'proxy-connection': 'keep-alive' } ]
+38 verbose get saving md5 to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\md5\.cache.json
+39 silly addNameRange number 2 { name: 'md5', range: '*', hasData: true }
+40 silly addNameRange versions [ 'md5', [ '1.0.1', '1.0.0', '2.0.0', '2.1.0' ] ]
+41 silly addNamed md5@2.1.0
+42 verbose addNamed "2.1.0" is a plain semver version for md5
+43 silly mapToRegistry name md5
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry http://registry.npmjs.org/
+46 silly mapToRegistry uri http://registry.npmjs.org/md5
+47 verbose addRemoteTarball http://registry.npmjs.org/md5/-/md5-2.1.0.tgz not in flight; adding
+48 verbose addRemoteTarball [ 'http://registry.npmjs.org/md5/-/md5-2.1.0.tgz',
+48 verbose addRemoteTarball   '22ec92f33ac97a6ef4dc16c0f57fa46c01ed13bb' ]
+49 info retry fetch attempt 1 at 10:45:50
+50 info attempt registry request try #1 at 10:45:50
+51 http fetch GET http://registry.npmjs.org/md5/-/md5-2.1.0.tgz
+52 http fetch 200 http://registry.npmjs.org/md5/-/md5-2.1.0.tgz
+53 silly fetchAndShaCheck shasum 22ec92f33ac97a6ef4dc16c0f57fa46c01ed13bb
+54 verbose addTmpTarball C:\Users\ADMINI~1\AppData\Local\Temp\npm-10272-d620750d\registry.npmjs.org\md5\-\md5-2.1.0.tgz not in flight; adding
+55 verbose addTmpTarball already have metadata; skipping unpack for md5@2.1.0
+56 silly cache afterAdd md5@2.1.0
+57 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\md5\2.1.0\package\package.json not in flight; writing
+58 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\md5\2.1.0\package\package.json written
+59 silly install resolved [ { name: 'md5',
+59 silly install resolved     description: 'js function for hashing messages with MD5',
+59 silly install resolved     version: '2.1.0',
+59 silly install resolved     author:
+59 silly install resolved      { name: 'Paul Vorbach',
+59 silly install resolved        email: 'paul@vorba.ch',
+59 silly install resolved        url: 'http://paul.vorba.ch' },
+59 silly install resolved     contributors: [ [Object] ],
+59 silly install resolved     tags: [ 'md5', 'hash', 'encryption', 'message digest' ],
+59 silly install resolved     repository: { type: 'git', url: 'git://github.com/pvorb/node-md5.git' },
+59 silly install resolved     bugs: { url: 'https://github.com/pvorb/node-md5/issues' },
+59 silly install resolved     main: 'md5.js',
+59 silly install resolved     scripts: { test: 'mocha' },
+59 silly install resolved     dependencies: { charenc: '~0.0.1', crypt: '~0.0.1', 'is-buffer': '~1.1.1' },
+59 silly install resolved     devDependencies: { mocha: '~2.3.4' },
+59 silly install resolved     optionalDependencies: {},
+59 silly install resolved     license: 'BSD-3-Clause',
+59 silly install resolved     gitHead: '017c1c64a1c538688500e114b91758fe8829cbe0',
+59 silly install resolved     homepage: 'https://github.com/pvorb/node-md5#readme',
+59 silly install resolved     _id: 'md5@2.1.0',
+59 silly install resolved     _shasum: '22ec92f33ac97a6ef4dc16c0f57fa46c01ed13bb',
+59 silly install resolved     _from: 'md5@*',
+59 silly install resolved     _npmVersion: '2.14.12',
+59 silly install resolved     _nodeVersion: '4.2.6',
+59 silly install resolved     _npmUser: { name: 'pvorb', email: 'paul@vorba.ch' },
+59 silly install resolved     dist:
+59 silly install resolved      { shasum: '22ec92f33ac97a6ef4dc16c0f57fa46c01ed13bb',
+59 silly install resolved        tarball: 'http://registry.npmjs.org/md5/-/md5-2.1.0.tgz' },
+59 silly install resolved     maintainers: [ [Object], [Object] ],
+59 silly install resolved     _npmOperationalInternal:
+59 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+59 silly install resolved        tmp: 'tmp/md5-2.1.0.tgz_1457478108340_0.010296016465872526' },
+59 silly install resolved     directories: {},
+59 silly install resolved     _resolved: 'http://registry.npmjs.org/md5/-/md5-2.1.0.tgz' } ]
+60 info install md5@2.1.0 into D:\nodeDemo\node-echo
+61 info installOne md5@2.1.0
+62 verbose installOne of md5 to D:\nodeDemo\node-echo not in flight; installing
+63 verbose lock using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\md5-5465138deec5b68a.lock for D:\nodeDemo\node-echo\node_modules\md5
+64 silly install write writing md5 2.1.0 to D:\nodeDemo\node-echo\node_modules\md5
+65 verbose unbuild node_modules\md5
+66 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5 is being purged from base D:\nodeDemo\node-echo
+67 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5
+68 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\md5\2.1.0\package.tgz
+69 verbose tar unpacking to D:\nodeDemo\node-echo\node_modules\md5
+70 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5 is being purged
+71 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5
+72 silly gunzTarPerm modes [ '777', '666' ]
+73 silly gunzTarPerm extractEntry package.json
+74 silly gunzTarPerm extractEntry .npmignore
+75 silly gunzTarPerm extractEntry README.md
+76 silly gunzTarPerm extractEntry LICENSE
+77 silly gunzTarPerm extractEntry md5.js
+78 silly gunzTarPerm extractEntry test.js
+79 silly gunzTarPerm extractEntry .travis.yml
+80 verbose write writing to D:\nodeDemo\node-echo\node_modules\md5\package.json
+81 info preinstall md5@2.1.0
+82 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\package.json
+83 silly prepareForInstallMany adding charenc@~0.0.1 from md5 dependencies
+84 silly prepareForInstallMany adding crypt@~0.0.1 from md5 dependencies
+85 silly prepareForInstallMany adding is-buffer@~1.1.1 from md5 dependencies
+86 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\package.json
+87 silly cache add args [ 'charenc@~0.0.1', null ]
+88 verbose cache add spec charenc@~0.0.1
+89 silly cache add args [ 'crypt@~0.0.1', null ]
+90 verbose cache add spec crypt@~0.0.1
+91 silly cache add parsed spec { raw: 'charenc@~0.0.1',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'charenc',
+91 silly cache add   rawSpec: '~0.0.1',
+91 silly cache add   spec: '>=0.0.1 <0.1.0',
+91 silly cache add   type: 'range' }
+92 silly addNamed charenc@>=0.0.1 <0.1.0
+93 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for charenc
+94 silly addNameRange { name: 'charenc', range: '>=0.0.1 <0.1.0', hasData: false }
+95 silly mapToRegistry name charenc
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry http://registry.npmjs.org/
+98 silly mapToRegistry uri http://registry.npmjs.org/charenc
+99 verbose addNameRange registry:http://registry.npmjs.org/charenc not in flight; fetching
+100 silly cache add parsed spec { raw: 'crypt@~0.0.1',
+100 silly cache add   scope: null,
+100 silly cache add   name: 'crypt',
+100 silly cache add   rawSpec: '~0.0.1',
+100 silly cache add   spec: '>=0.0.1 <0.1.0',
+100 silly cache add   type: 'range' }
+101 silly addNamed crypt@>=0.0.1 <0.1.0
+102 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for crypt
+103 silly addNameRange { name: 'crypt', range: '>=0.0.1 <0.1.0', hasData: false }
+104 silly mapToRegistry name crypt
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry http://registry.npmjs.org/
+107 silly mapToRegistry uri http://registry.npmjs.org/crypt
+108 verbose addNameRange registry:http://registry.npmjs.org/crypt not in flight; fetching
+109 silly cache add args [ 'is-buffer@~1.1.1', null ]
+110 verbose cache add spec is-buffer@~1.1.1
+111 silly cache add parsed spec { raw: 'is-buffer@~1.1.1',
+111 silly cache add   scope: null,
+111 silly cache add   name: 'is-buffer',
+111 silly cache add   rawSpec: '~1.1.1',
+111 silly cache add   spec: '>=1.1.1 <1.2.0',
+111 silly cache add   type: 'range' }
+112 silly addNamed is-buffer@>=1.1.1 <1.2.0
+113 verbose addNamed ">=1.1.1 <1.2.0" is a valid semver range for is-buffer
+114 silly addNameRange { name: 'is-buffer', range: '>=1.1.1 <1.2.0', hasData: false }
+115 silly mapToRegistry name is-buffer
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry http://registry.npmjs.org/
+118 silly mapToRegistry uri http://registry.npmjs.org/is-buffer
+119 verbose addNameRange registry:http://registry.npmjs.org/is-buffer not in flight; fetching
+120 verbose request uri http://registry.npmjs.org/charenc
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 10:45:51
+123 verbose etag "56QWGF6L07H5HVAFRB2ZA83YH"
+124 http request GET http://registry.npmjs.org/charenc
+125 verbose request uri http://registry.npmjs.org/crypt
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 10:45:51
+128 verbose etag "B1RL9UCH6KDV192TWV14KI8AX"
+129 http request GET http://registry.npmjs.org/crypt
+130 verbose request uri http://registry.npmjs.org/is-buffer
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 10:45:51
+133 verbose etag "307M85SGF48SDNFKWO1ACHF1L"
+134 http request GET http://registry.npmjs.org/is-buffer
+135 http 304 http://registry.npmjs.org/is-buffer
+136 silly get cb [ 304,
+136 silly get   { date: 'Fri, 25 Mar 2016 02:46:39 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     'cache-control': 'max-age=300',
+136 silly get     etag: '"307M85SGF48SDNFKWO1ACHF1L"',
+136 silly get     age: '224',
+136 silly get     'x-served-by': 'cache-itm7425-ITM',
+136 silly get     'x-cache': 'HIT, MISS from HexinFirewall',
+136 silly get     'x-cache-hits': '5',
+136 silly get     'x-timer': 'S1458873999.419288,VS0,VE0',
+136 silly get     vary: 'Accept',
+136 silly get     connection: 'keep-alive',
+136 silly get     'proxy-connection': 'keep-alive' } ]
+137 verbose etag http://registry.npmjs.org/is-buffer from cache
+138 verbose get saving is-buffer to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\is-buffer\.cache.json
+139 silly addNameRange number 2 { name: 'is-buffer', range: '>=1.1.1 <1.2.0', hasData: true }
+140 silly addNameRange versions [ 'is-buffer',
+140 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.1.0', '1.1.1', '1.1.2', '1.1.3' ] ]
+141 silly addNamed is-buffer@1.1.3
+142 verbose addNamed "1.1.3" is a plain semver version for is-buffer
+143 silly cache afterAdd is-buffer@1.1.3
+144 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\is-buffer\1.1.3\package\package.json not in flight; writing
+145 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\is-buffer\1.1.3\package\package.json written
+146 http 304 http://registry.npmjs.org/crypt
+147 silly get cb [ 304,
+147 silly get   { date: 'Fri, 25 Mar 2016 02:46:39 GMT',
+147 silly get     via: '1.1 varnish',
+147 silly get     'cache-control': 'max-age=300',
+147 silly get     etag: '"B1RL9UCH6KDV192TWV14KI8AX"',
+147 silly get     age: '0',
+147 silly get     'x-served-by': 'cache-itm7427-ITM',
+147 silly get     'x-cache': 'HIT, MISS from HexinFirewall',
+147 silly get     'x-cache-hits': '1',
+147 silly get     'x-timer': 'S1458873999.467271,VS0,VE182',
+147 silly get     vary: 'Accept',
+147 silly get     connection: 'keep-alive',
+147 silly get     'proxy-connection': 'keep-alive' } ]
+148 verbose etag http://registry.npmjs.org/crypt from cache
+149 verbose get saving crypt to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\crypt\.cache.json
+150 silly addNameRange number 2 { name: 'crypt', range: '>=0.0.1 <0.1.0', hasData: true }
+151 silly addNameRange versions [ 'crypt', [ '0.0.0', '0.0.1' ] ]
+152 silly addNamed crypt@0.0.1
+153 verbose addNamed "0.0.1" is a plain semver version for crypt
+154 silly cache afterAdd crypt@0.0.1
+155 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\crypt\0.0.1\package\package.json not in flight; writing
+156 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\crypt\0.0.1\package\package.json written
+157 http 304 http://registry.npmjs.org/charenc
+158 silly get cb [ 304,
+158 silly get   { date: 'Fri, 25 Mar 2016 02:46:39 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     etag: '"56QWGF6L07H5HVAFRB2ZA83YH"',
+158 silly get     age: '0',
+158 silly get     'x-served-by': 'cache-itm7425-ITM',
+158 silly get     'x-cache': 'HIT, MISS from HexinFirewall',
+158 silly get     'x-cache-hits': '1',
+158 silly get     'x-timer': 'S1458873999.303535,VS0,VE604',
+158 silly get     vary: 'Accept',
+158 silly get     connection: 'keep-alive',
+158 silly get     'proxy-connection': 'keep-alive' } ]
+159 verbose etag http://registry.npmjs.org/charenc from cache
+160 verbose get saving charenc to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\charenc\.cache.json
+161 silly addNameRange number 2 { name: 'charenc', range: '>=0.0.1 <0.1.0', hasData: true }
+162 silly addNameRange versions [ 'charenc', [ '0.0.0', '0.0.1' ] ]
+163 silly addNamed charenc@0.0.1
+164 verbose addNamed "0.0.1" is a plain semver version for charenc
+165 silly cache afterAdd charenc@0.0.1
+166 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\charenc\0.0.1\package\package.json not in flight; writing
+167 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\charenc\0.0.1\package\package.json written
+168 silly install resolved [ { name: 'is-buffer',
+168 silly install resolved     description: 'Determine if an object is Buffer',
+168 silly install resolved     version: '1.1.3',
+168 silly install resolved     author:
+168 silly install resolved      { name: 'Feross Aboukhadijeh',
+168 silly install resolved        email: 'feross@feross.org',
+168 silly install resolved        url: 'http://feross.org/' },
+168 silly install resolved     bugs: { url: 'https://github.com/feross/is-buffer/issues' },
+168 silly install resolved     dependencies: {},
+168 silly install resolved     devDependencies: { standard: '^6.0.5', tape: '^4.0.0', zuul: '^3.0.0' },
+168 silly install resolved     engines: { node: '>=0.12' },
+168 silly install resolved     keywords:
+168 silly install resolved      [ 'buffer',
+168 silly install resolved        'buffers',
+168 silly install resolved        'type',
+168 silly install resolved        'core buffer',
+168 silly install resolved        'browser buffer',
+168 silly install resolved        'browserify',
+168 silly install resolved        'typed array',
+168 silly install resolved        'uint32array',
+168 silly install resolved        'int16array',
+168 silly install resolved        'int32array',
+168 silly install resolved        'float32array',
+168 silly install resolved        'float64array',
+168 silly install resolved        'browser',
+168 silly install resolved        'arraybuffer',
+168 silly install resolved        'dataview' ],
+168 silly install resolved     license: 'MIT',
+168 silly install resolved     main: 'index.js',
+168 silly install resolved     repository: { type: 'git', url: 'git://github.com/feross/is-buffer.git' },
+168 silly install resolved     scripts:
+168 silly install resolved      { test: 'standard && npm run test-node && npm run test-browser',
+168 silly install resolved        'test-browser': 'zuul -- test/*.js',
+168 silly install resolved        'test-browser-local': 'zuul --local -- test/*.js',
+168 silly install resolved        'test-node': 'tape test/*.js' },
+168 silly install resolved     testling: { files: 'test/*.js' },
+168 silly install resolved     gitHead: 'dfd658d887e6b63254b89d22af1a755a39313455',
+168 silly install resolved     homepage: 'https://github.com/feross/is-buffer',
+168 silly install resolved     _id: 'is-buffer@1.1.3',
+168 silly install resolved     _shasum: 'db897fc3f7aca2d50de94b6c8c2896a4771627af',
+168 silly install resolved     _from: 'is-buffer@>=1.1.1 <1.2.0',
+168 silly install resolved     _npmVersion: '2.14.12',
+168 silly install resolved     _nodeVersion: '4.3.2',
+168 silly install resolved     _npmUser: { name: 'feross', email: 'feross@feross.org' },
+168 silly install resolved     dist:
+168 silly install resolved      { shasum: 'db897fc3f7aca2d50de94b6c8c2896a4771627af',
+168 silly install resolved        tarball: 'http://registry.npmjs.org/is-buffer/-/is-buffer-1.1.3.tgz' },
+168 silly install resolved     maintainers: [ [Object] ],
+168 silly install resolved     _npmOperationalInternal:
+168 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+168 silly install resolved        tmp: 'tmp/is-buffer-1.1.3.tgz_1457390977775_0.6384289276320487' },
+168 silly install resolved     directories: {},
+168 silly install resolved     _resolved: 'http://registry.npmjs.org/is-buffer/-/is-buffer-1.1.3.tgz',
+168 silly install resolved     readme: 'ERROR: No README data found!' },
+168 silly install resolved   { author:
+168 silly install resolved      { name: 'Paul Vorbach',
+168 silly install resolved        email: 'paul@vorb.de',
+168 silly install resolved        url: 'http://vorb.de' },
+168 silly install resolved     name: 'crypt',
+168 silly install resolved     description: 'utilities for encryption and hashing',
+168 silly install resolved     tags: [ 'hash', 'security' ],
+168 silly install resolved     version: '0.0.1',
+168 silly install resolved     repository: { type: 'git', url: 'git://github.com/pvorb/node-crypt.git' },
+168 silly install resolved     bugs: { url: 'https://github.com/pvorb/node-crypt/issues' },
+168 silly install resolved     main: 'crypt.js',
+168 silly install resolved     engines: { node: '*' },
+168 silly install resolved     _npmUser: { name: 'pvorb', email: 'paul@vorb.de' },
+168 silly install resolved     _id: 'crypt@0.0.1',
+168 silly install resolved     dependencies: {},
+168 silly install resolved     devDependencies: {},
+168 silly install resolved     _engineSupported: true,
+168 silly install resolved     _npmVersion: '1.0.103',
+168 silly install resolved     _nodeVersion: 'v0.4.12',
+168 silly install resolved     _defaultsLoaded: true,
+168 silly install resolved     dist:
+168 silly install resolved      { shasum: '5f11b21a6c05ef1b5e79708366da6374ece1e6a2',
+168 silly install resolved        tarball: 'http://registry.npmjs.org/crypt/-/crypt-0.0.1.tgz' },
+168 silly install resolved     maintainers: [ [Object] ],
+168 silly install resolved     directories: {},
+168 silly install resolved     _shasum: '5f11b21a6c05ef1b5e79708366da6374ece1e6a2',
+168 silly install resolved     _resolved: 'http://registry.npmjs.org/crypt/-/crypt-0.0.1.tgz',
+168 silly install resolved     _from: 'crypt@>=0.0.1 <0.1.0',
+168 silly install resolved     readme: 'ERROR: No README data found!',
+168 silly install resolved     homepage: 'https://github.com/pvorb/node-crypt#readme' },
+168 silly install resolved   { author:
+168 silly install resolved      { name: 'Paul Vorbach',
+168 silly install resolved        email: 'paul@vorb.de',
+168 silly install resolved        url: 'http://vorb.de' },
+168 silly install resolved     name: 'charenc',
+168 silly install resolved     description: 'character encoding utilities',
+168 silly install resolved     tags: [ 'utf8', 'binary', 'byte', 'string' ],
+168 silly install resolved     version: '0.0.1',
+168 silly install resolved     repository: { type: 'git', url: 'git://github.com/pvorb/node-charenc.git' },
+168 silly install resolved     bugs: { url: 'https://github.com/pvorb/node-charenc/issues' },
+168 silly install resolved     main: 'charenc.js',
+168 silly install resolved     engines: { node: '*' },
+168 silly install resolved     _npmUser: { name: 'pvorb', email: 'paul@vorb.de' },
+168 silly install resolved     _id: 'charenc@0.0.1',
+168 silly install resolved     dependencies: {},
+168 silly install resolved     devDependencies: {},
+168 silly install resolved     _engineSupported: true,
+168 silly install resolved     _npmVersion: '1.0.103',
+168 silly install resolved     _nodeVersion: 'v0.4.12',
+168 silly install resolved     _defaultsLoaded: true,
+168 silly install resolved     dist:
+168 silly install resolved      { shasum: '004cff9feaf102382ed12db58dd6f962796d6e88',
+168 silly install resolved        tarball: 'http://registry.npmjs.org/charenc/-/charenc-0.0.1.tgz' },
+168 silly install resolved     maintainers: [ [Object] ],
+168 silly install resolved     directories: {},
+168 silly install resolved     _shasum: '004cff9feaf102382ed12db58dd6f962796d6e88',
+168 silly install resolved     _resolved: 'http://registry.npmjs.org/charenc/-/charenc-0.0.1.tgz',
+168 silly install resolved     _from: 'charenc@>=0.0.1 <0.1.0',
+168 silly install resolved     readme: 'ERROR: No README data found!',
+168 silly install resolved     homepage: 'https://github.com/pvorb/node-charenc#readme' } ]
+169 info install is-buffer@1.1.3 into D:\nodeDemo\node-echo\node_modules\md5
+170 info install crypt@0.0.1 into D:\nodeDemo\node-echo\node_modules\md5
+171 info install charenc@0.0.1 into D:\nodeDemo\node-echo\node_modules\md5
+172 info installOne is-buffer@1.1.3
+173 verbose installOne of is-buffer to D:\nodeDemo\node-echo\node_modules\md5 not in flight; installing
+174 info installOne crypt@0.0.1
+175 verbose installOne of crypt to D:\nodeDemo\node-echo\node_modules\md5 not in flight; installing
+176 info installOne charenc@0.0.1
+177 verbose installOne of charenc to D:\nodeDemo\node-echo\node_modules\md5 not in flight; installing
+178 verbose lock using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\crypt-8673752629fd4cee.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+179 verbose lock using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\is-buffer-c598ed2f6845f9dd.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+180 silly install write writing crypt 0.0.1 to D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+181 silly install write writing is-buffer 1.1.3 to D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+182 verbose lock using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\charenc-754446e040227d5e.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+183 silly install write writing charenc 0.0.1 to D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+184 verbose unbuild node_modules\md5\node_modules\crypt
+185 verbose unbuild node_modules\md5\node_modules\is-buffer
+186 verbose unbuild node_modules\md5\node_modules\charenc
+187 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt is being purged from base D:\nodeDemo\node-echo
+188 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+189 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer is being purged from base D:\nodeDemo\node-echo
+190 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+191 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\crypt\0.0.1\package.tgz
+192 verbose tar unpacking to D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+193 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt is being purged
+194 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+195 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\is-buffer\1.1.3\package.tgz
+196 verbose tar unpacking to D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+197 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer is being purged
+198 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+199 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc is being purged from base D:\nodeDemo\node-echo
+200 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+201 silly gunzTarPerm modes [ '777', '666' ]
+202 silly gunzTarPerm modes [ '777', '666' ]
+203 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\charenc\0.0.1\package.tgz
+204 verbose tar unpacking to D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+205 silly gentlyRm D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc is being purged
+206 verbose gentlyRm don't care about contents; nuking D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+207 silly gunzTarPerm modes [ '777', '666' ]
+208 silly gunzTarPerm extractEntry crypt.js
+209 silly gunzTarPerm modified mode [ 'crypt.js', 420, 438 ]
+210 silly gunzTarPerm extractEntry package.json
+211 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+212 silly gunzTarPerm extractEntry README.mkd
+213 silly gunzTarPerm modified mode [ 'README.mkd', 420, 438 ]
+214 silly gunzTarPerm extractEntry package.json
+215 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+216 silly gunzTarPerm extractEntry README.md
+217 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+218 silly gunzTarPerm extractEntry LICENSE
+219 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+220 silly gunzTarPerm extractEntry LICENSE.mkd
+221 silly gunzTarPerm modified mode [ 'LICENSE.mkd', 420, 438 ]
+222 silly gunzTarPerm extractEntry index.js
+223 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+224 silly gunzTarPerm extractEntry .travis.yml
+225 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+226 silly gunzTarPerm extractEntry charenc.js
+227 silly gunzTarPerm modified mode [ 'charenc.js', 420, 438 ]
+228 silly gunzTarPerm extractEntry package.json
+229 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+230 silly gunzTarPerm extractEntry LICENSE.mkd
+231 silly gunzTarPerm modified mode [ 'LICENSE.mkd', 420, 438 ]
+232 silly gunzTarPerm extractEntry .zuul.yml
+233 silly gunzTarPerm modified mode [ '.zuul.yml', 420, 438 ]
+234 silly gunzTarPerm extractEntry test/basic.js
+235 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 438 ]
+236 silly gunzTarPerm extractEntry README.js
+237 silly gunzTarPerm modified mode [ 'README.js', 420, 438 ]
+238 verbose write writing to D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt\package.json
+239 info preinstall crypt@0.0.1
+240 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt\package.json
+241 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt\package.json
+242 verbose write writing to D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc\package.json
+243 silly install resolved []
+244 verbose about to build D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+245 info build D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+246 info preinstall charenc@0.0.1
+247 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc\package.json
+248 info linkStuff crypt@0.0.1
+249 silly linkStuff crypt@0.0.1 has D:\nodeDemo\node-echo\node_modules\md5\node_modules as its parent node_modules
+250 verbose linkBins crypt@0.0.1
+251 verbose linkMans crypt@0.0.1
+252 verbose rebuildBundles crypt@0.0.1
+253 verbose write writing to D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer\package.json
+254 info install crypt@0.0.1
+255 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc\package.json
+256 info preinstall is-buffer@1.1.3
+257 info postinstall crypt@0.0.1
+258 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer\package.json
+259 silly install resolved []
+260 verbose about to build D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+261 info build D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+262 verbose unlock done using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\crypt-8673752629fd4cee.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\crypt
+263 info linkStuff charenc@0.0.1
+264 silly linkStuff charenc@0.0.1 has D:\nodeDemo\node-echo\node_modules\md5\node_modules as its parent node_modules
+265 verbose readDependencies loading dependencies from D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer\package.json
+266 verbose linkBins charenc@0.0.1
+267 verbose linkMans charenc@0.0.1
+268 verbose rebuildBundles charenc@0.0.1
+269 info install charenc@0.0.1
+270 info postinstall charenc@0.0.1
+271 silly install resolved []
+272 verbose about to build D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+273 info build D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+274 verbose unlock done using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\charenc-754446e040227d5e.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\charenc
+275 info linkStuff is-buffer@1.1.3
+276 silly linkStuff is-buffer@1.1.3 has D:\nodeDemo\node-echo\node_modules\md5\node_modules as its parent node_modules
+277 verbose linkBins is-buffer@1.1.3
+278 verbose linkMans is-buffer@1.1.3
+279 verbose rebuildBundles is-buffer@1.1.3
+280 info install is-buffer@1.1.3
+281 info postinstall is-buffer@1.1.3
+282 verbose unlock done using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\is-buffer-c598ed2f6845f9dd.lock for D:\nodeDemo\node-echo\node_modules\md5\node_modules\is-buffer
+283 verbose about to build D:\nodeDemo\node-echo\node_modules\md5
+284 info build D:\nodeDemo\node-echo\node_modules\md5
+285 info linkStuff md5@2.1.0
+286 silly linkStuff md5@2.1.0 has D:\nodeDemo\node-echo\node_modules as its parent node_modules
+287 verbose linkBins md5@2.1.0
+288 verbose linkMans md5@2.1.0
+289 verbose rebuildBundles md5@2.1.0
+290 verbose rebuildBundles [ 'charenc', 'crypt', 'is-buffer' ]
+291 info install md5@2.1.0
+292 info postinstall md5@2.1.0
+293 verbose unlock done using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\md5-5465138deec5b68a.lock for D:\nodeDemo\node-echo\node_modules\md5
+294 verbose validateInstall loading D:\nodeDemo\node-echo\package.json for validation
+295 verbose stack Error: The package chai does not satisfy its siblings' peerDependencies requirements!
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\lib\install.js:267:7
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+295 verbose stack     at cb (D:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+295 verbose stack     at cb (D:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+295 verbose stack     at cb (D:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+295 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+296 verbose cwd D:\nodeDemo\node-echo
+297 error Windows_NT 6.1.7601
+298 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "md5"
+299 error node v0.12.7
+300 error npm  v2.11.3
+301 error code EPEERINVALID
+302 error peerinvalid The package chai does not satisfy its siblings' peerDependencies requirements!
+302 error peerinvalid Peer chai-webdriver@1.1.1 wants chai@>= 1 < 3
+303 verbose exit [ 1, true ]
