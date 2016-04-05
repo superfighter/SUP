@@ -2,11 +2,7 @@ var ME = require('../lib/mouseEvent');
 var PU = require('../phantom/PUnits');
 module.exports = function(page, spawn, fs) {
 //    console.log(assert.equal('2015/12/05~','22');
-    PU.delayRender({
-        ele : 'J_mainKey',
-        eventType: 'innerText',
-        textValue: 'my first lady'
-    }).setOtherCommands(function(hasTip,self){
+    PU.delayRender().setOtherCommands(function(hasTip,self){
 //                console.log(hasTip);
                 var child = self.spawnSugar(['mocha-phantomjs','-R','json','tester/index.html']);
 //                var child = self.spawnSugar(['mocha','lib/mocha/testMocha.js','--reporter','mochawesome']);
@@ -14,13 +10,13 @@ module.exports = function(page, spawn, fs) {
 //                
                 child.stdout.on('data',function(data){
                     if(!hasTip){
+                        hasTip = true;
 //                        console.log('begin mochawesome !!!');
                         console.log('====================mocha-phantomjs begin======================');
-//                        console.log(data);
+                        // console.log(data);
                         fs.write(mp,data);
                         self.handlerMPJSON(data);
                     }
-                    hasTip = true;
                 });
                 child.stderr.on('data',function(data){
                     console.log(data);

@@ -21,19 +21,19 @@
 define(['app/moduleA'], function () {
     describe("StringCalculator", function () {
         describe("body background", function () {
-            it("is blue", function () {
-                $('body').trigger('click');
-                var result = $('body').css('width');
-                expect(result).to.equal('~~');
-            });
+            // it("is blue", function () {
+            //     $('body').trigger('click');
+            //     var result = $('body').css('width');
+            //     expect(result).to.equal('~~');
+            // });
             it("chai-jq", function(){
-                var $elem = $("<div id=\"hi\" foo=\"bar time\" />");
+                var $elem = $("<div id=\"hi\" foo=\"bar\" />");
 
                 expect($elem)
                   // Assertion object is `$elem`
-                  .to.have.$attr("id", "hi~").and
+                  .to.have.$attr("id", "hi").and
                   // Assertion object is still `$elem`
-                  .to.contain.$attr("foo", "bar");
+                  .to.contain.$attr("foo", "bar hi");
             });
         });
     });

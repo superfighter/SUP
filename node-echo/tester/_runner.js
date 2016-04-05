@@ -8,7 +8,7 @@ require.config({
 });
 
 // Require libraries
-require(['require', '../node_modules/chai/chai', '../node_modules/chai-jq/chai-jq'], function (require, chai, plugin) {
+require(['require', '../../node_modules/chai/chai', '../../node_modules/chai-jq/chai-jq'], function (require, chai, plugin) {
     
     // Chai
     assert = chai.assert;

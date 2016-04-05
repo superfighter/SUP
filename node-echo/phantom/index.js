@@ -15,7 +15,7 @@ phantom.outputEncoding="utf-8";
 var tx = 'doc/list.doc.txt';
 var mp = 'doc/mp.js';
 //var png = new Date().getTime() + '.png';
-fs.write(tx,'','w');
+// fs.write(tx,'','w');
 //page.onResourceRequested=function(data){
 ////    console.log('requested');
 //    var txc = fs.read(tx);

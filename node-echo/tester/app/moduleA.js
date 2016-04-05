@@ -17,7 +17,7 @@ define([], function() {
     }
     
     $(function(){
-        $('body').on('click',function(){
+        $('div').on('click',function(){
             $(this).css('width','1440px');
         })
     })
