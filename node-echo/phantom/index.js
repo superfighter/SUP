@@ -1,4 +1,5 @@
 var page = require('webpage').create();
+page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36';
 var spawn = require('child_process').spawn;
 var exec = require('child_process').exec;
 var fs = require('fs');

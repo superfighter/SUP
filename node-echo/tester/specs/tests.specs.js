@@ -21,11 +21,11 @@
 define(['app/moduleA'], function () {
     describe("StringCalculator", function () {
         describe("body background", function () {
-            // it("is blue", function () {
-            //     $('body').trigger('click');
-            //     var result = $('body').css('width');
-            //     expect(result).to.equal('~~');
-            // });
+            it("is blue", function () {
+                $('body').trigger('click');
+                var result = $('body').css('width');
+                expect(result).to.equal('~~');
+            });
             it("chai-jq", function(){
                 var $elem = $("<div id=\"hi\" foo=\"bar\" />");
 
@@ -35,6 +35,11 @@ define(['app/moduleA'], function () {
                   // Assertion object is still `$elem`
                   .to.contain.$attr("foo", "bar hi");
             });
+            it("theme",function(){
+              var theme = $(".theme-link").html();
+              expect(theme)
+                .to.equal('hexo');
+            })
         });
     });
     

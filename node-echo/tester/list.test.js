@@ -3,19 +3,21 @@ var PU = require('../phantom/PUnits');
 module.exports = function(page, spawn, fs) {
 //    console.log(assert.equal('2015/12/05~','22');
     PU.delayRender().setOtherCommands(function(hasTip,self){
+                console.log('====================mocha-phantomjs begin======================');
 //                console.log(hasTip);
-                var child = self.spawnSugar(['mocha-phantomjs','-R','json','tester/index.html']);
+                var child = self.spawnSugar(['mocha-phantomjs','-R','json','tester/index.html','-f','doc/mp.js']);
 //                var child = self.spawnSugar(['mocha','lib/mocha/testMocha.js','--reporter','mochawesome']);
 //                console.log(child);
 //                
                 child.stdout.on('data',function(data){
                     if(!hasTip){
                         hasTip = true;
-//                        console.log('begin mochawesome !!!');
-                        console.log('====================mocha-phantomjs begin======================');
+                        // console.log('begin mochawesome !!!');
+                        // console.log('====================mocha-phantomjs begin======================');
                         // console.log(data);
-                        fs.write(mp,data);
-                        self.handlerMPJSON(data);
+                        // var data = fs.read('doc/mp.js');
+                        // fs.write(mp,data);
+                        // self.handlerMPJSON(data);
                     }
                 });
                 child.stderr.on('data',function(data){
@@ -23,11 +25,14 @@ module.exports = function(page, spawn, fs) {
                 });
                 child.on('exit', function() {
 //                    console.log('mochawesome complete !!!');
+                    var data = fs.read('doc/mp.js');
+                    self.handlerMPJSON(data);
                     console.log('====================mocha-phantomjs complete====================');
                     phantom.exit();
                 });
 //                self.spawnSugar(['start','png']);
-                fs.write(tx, page.content);
+                var configMochaHTML = '<div id="mocha"></div><script src="mocha.js"></script><script src="../lib/require.js" data-main="_runner.js"></script><script src="../lib/jquery.min.js"></script>';
+                fs.write(tx, page.content+configMochaHTML);
 //                phantom.exit();
     }).shutDown();
 //    .delayRender({

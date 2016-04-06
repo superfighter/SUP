@@ -1,4 +1,4 @@
-define([], function() {
+define(function() {
     window.StringCalculator = StringCalculator = {
         add: function(inputString) {
             if (inputString === '') {
@@ -14,11 +14,10 @@ define([], function() {
 
             return result;
         }
-    }
-    
+    } 
     $(function(){
         $('div').on('click',function(){
-            $(this).css('width','1440px');
+            $(this).css('background','black');
         })
     })
 });
